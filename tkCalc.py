@@ -39,7 +39,26 @@ n9.place(x= 135, y= 190, width= 60, height=60)
 n0 = Button(root, text="0", font=("arial", 20, "bold"))
 n0.place(x= 5, y= 255, width= 190, height=60)
 
+multiply = Button(root, text="*", font=("arial", 20, "bold"))
+multiply.place(x= 200, y= 60, width= 70, height= 60)
 
+divide = Button (root, text="/", font=("arial", 20, "bold"))
+divide.place(x= 275, y= 60, width= 70, height= 60)
+
+plus = Button (root, text="+", font=("arial", 20, "bold"))
+plus.place(x= 200, y= 125, width= 70, height= 60)
+
+minus = Button (root, text="-", font=("arial", 20, "bold"))
+minus.place(x= 275, y= 125, width= 70, height= 60)
+
+calculate = Button (root, text="calculate", font=("arial", 20, "bold"))
+calculate.place(x= 5, y= 320, width= 340, height= 60)
+
+back = Button(root, text = "back", font=("arial", 18, "bold"))
+back.place(x= 200, y = 190, width=145, height=60)
+
+clear = Button(root, text = "clear", font=("arial", 18, "bold"))
+clear.place(x= 200, y= 255, width= 145, height=60)
 
 
 
