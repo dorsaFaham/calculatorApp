@@ -51,6 +51,14 @@ plus.place(x= 200, y= 125, width= 70, height= 60)
 minus = Button (root, text="-", font=("arial", 20, "bold"))
 minus.place(x= 275, y= 125, width= 70, height= 60)
 
+calculate = Button (root, text="calculate", font=("arial", 20, "bold"))
+calculate.place(x= 5, y= 320, width= 340, height= 60)
+
+back = Button(root, text = "back", font=("arial", 18, "bold"))
+back.place(x= 200, y = 190, width=145, height=60)
+
+clear = Button(root, text = "clear", font=("arial", 18, "bold"))
+clear.place(x= 200, y= 255, width= 145, height=60)
 
 
 
