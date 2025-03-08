@@ -18,6 +18,17 @@ def multiply_btn():
     screen_entry.insert(END, "*")
     screen_entry.config(state=DISABLED)
 
+def plus_btn():
+    screen_entry.config(state=NORMAL)
+    screen_entry.insert(END, "+")
+    screen_entry.config(state=DISABLED)
+
+def minus_btn():
+    screen_entry.config(state=NORMAL)
+    screen_entry.insert(END, "-")
+    screen_entry.config(state=DISABLED)
+
+
 
 screen_entry = Entry(root, bg = 'grey', font=("arial", 18), state=DISABLED)
 screen_entry.place(x=5, y=5, width=340, height= 50)
