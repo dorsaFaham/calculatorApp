@@ -5,9 +5,12 @@ from tkinter import *
 root = Tk()
 root.geometry("350x385")
 root.resizable(0,0)
-root.configure(bg = "lightblue")
+root.configure(bg = "darkblue")
 root.title("calculator")
 
+
+screen_entry = Entry(root, bg = 'grey', font=("arial", 18), state=DISABLED)
+screen_entry.place(x=5, y=5, width=340, height= 50)
 #buttons
 n1 = Button(root, text="1", font=("arial", 20, "bold"))
 n1.place(x= 5, y= 60, width= 60, height=60)
