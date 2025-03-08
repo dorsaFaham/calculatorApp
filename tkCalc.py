@@ -8,6 +8,10 @@ root.resizable(0,0)
 root.configure(bg = "lightblue")
 root.title("calculator")
 
+def divide_btn():
+    screen_entry.config(state=NORMAL)
+    screen_entry.insert(END, "/")
+    screen_entry.config(state=DISABLED)
 
 def multiply_btn():
     screen_entry.config(state=NORMAL)
