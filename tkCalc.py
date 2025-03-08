@@ -8,6 +8,27 @@ root.resizable(0,0)
 root.configure(bg = "lightblue")
 root.title("calculator")
 
+def divide_btn():
+    screen_entry.config(state=NORMAL)
+    screen_entry.insert(END, "/")
+    screen_entry.config(state=DISABLED)
+
+def multiply_btn():
+    screen_entry.config(state=NORMAL)
+    screen_entry.insert(END, "*")
+    screen_entry.config(state=DISABLED)
+
+def plus_btn():
+    screen_entry.config(state=NORMAL)
+    screen_entry.insert(END, "+")
+    screen_entry.config(state=DISABLED)
+
+def minus_btn():
+    screen_entry.config(state=NORMAL)
+    screen_entry.insert(END, "-")
+    screen_entry.config(state=DISABLED)
+
+
 
 screen_entry = Entry(root, bg = 'grey', font=("arial", 18), state=DISABLED)
 screen_entry.place(x=5, y=5, width=340, height= 50)
@@ -42,16 +63,16 @@ n9.place(x= 135, y= 190, width= 60, height=60)
 n0 = Button(root, text="0", font=("arial", 20, "bold"))
 n0.place(x= 5, y= 255, width= 190, height=60)
 
-multiply = Button(root, text="*", font=("arial", 20, "bold"))
+multiply = Button(root, text="*", font=("arial", 20, "bold"),command=multiply_btn)
 multiply.place(x= 200, y= 60, width= 70, height= 60)
 
-divide = Button (root, text="/", font=("arial", 20, "bold"))
+divide = Button (root, text="/", font=("arial", 20, "bold"),command=divide_btn)
 divide.place(x= 275, y= 60, width= 70, height= 60)
 
-plus = Button (root, text="+", font=("arial", 20, "bold"))
+plus = Button (root, text="+", font=("arial", 20, "bold"), command=plus_btn)
 plus.place(x= 200, y= 125, width= 70, height= 60)
 
-minus = Button (root, text="-", font=("arial", 20, "bold"))
+minus = Button (root, text="-", font=("arial", 20, "bold"), command= minus_btn)
 minus.place(x= 275, y= 125, width= 70, height= 60)
 
 calculate = Button (root, text="calculate", font=("arial", 20, "bold"))
